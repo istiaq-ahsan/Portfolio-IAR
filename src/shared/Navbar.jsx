@@ -1,9 +1,47 @@
-import logo from "../../public/circle-iar-logo.png";
+import { NavLink } from "react-router-dom";
+import logo from "/circle-iar-logo.png";
 
 const Navbar = () => {
+  const menuItems = (
+    <>
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive ? "text-yellow-500 font-semibold" : "text-white"
+        }
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to="/about"
+        className={({ isActive }) =>
+          isActive ? "text-yellow-500 font-semibold" : "text-white"
+        }
+      >
+        About Me
+      </NavLink>
+      <NavLink
+        to="/skill"
+        className={({ isActive }) =>
+          isActive ? "text-yellow-500 font-semibold" : "text-white"
+        }
+      >
+        Skills
+      </NavLink>
+      <NavLink
+        to="/education"
+        className={({ isActive }) =>
+          isActive ? "text-yellow-500 font-semibold" : "text-white"
+        }
+      >
+        Education
+      </NavLink>
+    </>
+  );
+
   return (
     <div>
-      <div className="navbar bg-slate-800 text-white">
+      <div className="navbar bg-slate-800 text-white fixed top-0 z-50">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,23 +64,7 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              {menuItems}
             </ul>
           </div>
           <div className="bg-base-300 rounded-full">
@@ -50,26 +72,8 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+          <ul className="menu menu-horizontal px-1 flex items-center gap-10">
+            {menuItems}
           </ul>
         </div>
         <div className="navbar-end">
