@@ -8,9 +8,14 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_6ral7ta", "template_5j9ktwe", form.current, {
-        publicKey: "hpL27XEtzQAcXthzT",
-      })
+      .sendForm(
+        import.meta.env.VITE_YOUR_SERVICE_ID,
+        import.meta.env.VITE_YOUR_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_YOUR_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
           console.log("SUCCESS!");
@@ -26,7 +31,7 @@ const Contact = () => {
       <h1 className="text-5xl text-center font-bold pt-20">Contact</h1>
       <div className="flex flex-col md:flex-row justify-center items-center p-6">
         {/* Form Section */}
-        <div className="md:w-1/2 p-4">
+        <div className="md:w-1/2 p-2 md:p-4">
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -86,7 +91,7 @@ const Contact = () => {
         </div>
 
         {/* Info Section */}
-        <div className="md:w-1/2 p-4 text-slate-900">
+        <div className="md:w-1/2 p-2 md:p-4 text-slate-900">
           <h2 className="text-2xl font-bold mb-4 text-center text-base-200">
             Contact Info
           </h2>

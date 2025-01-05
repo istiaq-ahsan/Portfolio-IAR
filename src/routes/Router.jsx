@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Skill from "../pages/Skill";
 import Education from "../pages/Education";
+import ViewDetails from "../components/ViewDetails";
 
 const Router = createBrowserRouter([
   {
@@ -25,6 +26,16 @@ const Router = createBrowserRouter([
       {
         path: "/education",
         element: <Education></Education>,
+      },
+      {
+        path: "viewDetails/:id",
+        element: <ViewDetails></ViewDetails>,
+        loader: async ({ params }) => {
+          const res = await fetch("/project.json");
+          const data = await res.json();
+          const singleData = data.find((d) => d.id == params.id);
+          return singleData;
+        },
       },
     ],
   },

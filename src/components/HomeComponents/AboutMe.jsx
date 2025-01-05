@@ -6,7 +6,7 @@ const AboutMe = () => {
         <div>
           <h1 className="text-5xl font-bold text-center">About Me</h1>
         </div>
-        <div className="flex justify-center items-center p-16">
+        <div className="flex flex-col gap-5 md:flex-row justify-center items-center p-8 md:p-16">
           <div className="md:w-1/2">
             <img className="w-[350px] rounded-full" src={aboutImg} alt="" />
           </div>
