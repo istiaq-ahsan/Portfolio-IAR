@@ -11,13 +11,13 @@ const Skill = () => {
 
         {/* Marquee Section */}
         <Marquee pauseOnHover>
-          <div className="flex space-x-16 mt-10">
+          <div className="flex space-x-10 md:space-x-16 mt-10">
             {/* Skill 1 */}
             <div className="flex flex-col items-center">
               <img
                 src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"
                 alt="HTML"
-                className="w-28 h-28 object-contain"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
               <h2 className="mt-4 text-lg text-white font-semibold">HTML</h2>
             </div>
@@ -26,7 +26,7 @@ const Skill = () => {
               <img
                 src="https://img.icons8.com/?size=100&id=3BTBsJs5myRy&format=png&color=000000"
                 alt="CSS"
-                className="w-28 h-28 object-contain"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
               <h2 className="mt-4 text-lg text-white font-semibold">CSS</h2>
             </div>
@@ -35,7 +35,7 @@ const Skill = () => {
               <img
                 src="https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000"
                 alt="Tailwind CSS"
-                className="w-28 h-28 object-contain"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
               <h2 className="mt-4 text-lg text-white font-semibold">
                 Tailwind CSS
@@ -46,7 +46,7 @@ const Skill = () => {
               <img
                 src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
                 alt="JavaScript"
-                className="w-28 h-28 object-contain"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
               <h2 className="mt-4 text-lg text-white font-semibold">
                 JavaScript
@@ -57,7 +57,7 @@ const Skill = () => {
               <img
                 src="https://img.icons8.com/?size=100&id=wPohyHO_qO1a&format=png&color=000000"
                 alt="React"
-                className="w-28 h-28 object-contain"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
               <h2 className="mt-4 text-lg text-white font-semibold">React</h2>
             </div>
@@ -66,7 +66,7 @@ const Skill = () => {
               <img
                 src="https://img.icons8.com/?size=100&id=62452&format=png&color=000000"
                 alt="Firebase"
-                className="w-28 h-28 object-contain"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
               <h2 className="mt-4 text-lg text-white font-semibold">
                 Firebase
@@ -77,7 +77,7 @@ const Skill = () => {
               <img
                 src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
                 alt="MongoDB"
-                className="w-28 h-28 object-contain"
+                className="w-16 h-16 md:w-24 md:h-24 object-contain"
               />
               <h2 className="mt-4 text-lg text-white font-semibold">MongoDB</h2>
             </div>

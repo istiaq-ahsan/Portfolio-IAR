@@ -2,7 +2,7 @@ import aboutImg from "../assets/iar-2nd-img.jpeg";
 
 const About = () => {
   return (
-    <div className="py-10 bg-slate-800 min-h-screen flex items-center">
+    <div className="py-10 bg-slate-900 min-h-screen flex items-center">
       <div className="w-11/12 mx-auto">
         {/* Title */}
         <div className="text-center mb-10">
