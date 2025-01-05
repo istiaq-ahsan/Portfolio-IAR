@@ -5,6 +5,7 @@ import About from "../pages/About";
 import Skill from "../pages/Skill";
 import Education from "../pages/Education";
 import ViewDetails from "../components/ViewDetails";
+import ContactMe from "../pages/ContactMe";
 
 const Router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const Router = createBrowserRouter([
           const singleData = data.find((d) => d.id == params.id);
           return singleData;
         },
+      },
+      {
+        path: "/contact",
+        element: <ContactMe></ContactMe>,
       },
     ],
   },

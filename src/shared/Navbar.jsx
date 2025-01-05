@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "/circle-iar-logo.png";
 
 const Navbar = () => {
@@ -35,6 +35,14 @@ const Navbar = () => {
         }
       >
         Education
+      </NavLink>
+      <NavLink
+        to="/contact"
+        className={({ isActive }) =>
+          isActive ? "text-yellow-500 font-semibold" : "text-white"
+        }
+      >
+        Contact
       </NavLink>
     </>
   );
@@ -81,7 +89,12 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Download Resume</a>
+          <Link
+            to="https://docs.google.com/document/d/1Sux1_kZkNI7qzKzDog0qiZCkeL_uviTabBoo4M9hWa0/edit?usp=drive_link"
+            className="btn"
+          >
+            Download Resume
+          </Link>
         </div>
       </div>
     </div>

@@ -6,11 +6,11 @@ const Education = () => {
       <div className="text-4xl md:text-5xl font-bold text-center mx-auto">
         Educational Background
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center mt-10">
+      <div className="flex flex-col md:flex-row justify-center gap-5 items-center mt-10">
         <div className="md:w-1/2">
-          <div className="bg-slate-900 w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full">
+          <div className="bg-slate-900 w-[270px] h-[270px] lg:w-[400px] lg:h-[400px] rounded-full">
             <img
-              className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full p-2"
+              className="w-[270px] h-[270px] lg:w-[400px] lg:h-[400px] rounded-full p-2"
               src={career}
               alt=""
             />

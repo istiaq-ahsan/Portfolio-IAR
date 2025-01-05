@@ -15,7 +15,12 @@ const Banner = () => {
               </h1>
               <h3 className="text-3xl font-semibold">Frontened Developer</h3>
               <div className="pt-5">
-                <Link className="btn">Download Resume</Link>
+                <Link
+                  to="https://docs.google.com/document/d/1Sux1_kZkNI7qzKzDog0qiZCkeL_uviTabBoo4M9hWa0/edit?usp=sharing"
+                  className="btn"
+                >
+                  Download Resume
+                </Link>
               </div>
             </div>
           </div>
@@ -42,7 +47,7 @@ const Banner = () => {
                   <Link to="https://www.facebook.com/profile.php?id=100095084532947">
                     <FaFacebookSquare />
                   </Link>
-                  <Link>
+                  <Link to="https://wa.me/01575306824">
                     <FaWhatsappSquare />
                   </Link>
                 </div>

@@ -9,20 +9,19 @@ const Projects = () => {
     axios
       .get("/project.json")
       .then((res) => {
-        console.log(res.data); // Check the structure of the response
-        setProjects(res.data); // Assuming the JSON contains a "projects" array
+        setProjects(res.data);
       })
       .catch((err) => {
-        console.error("Error fetching projects:", err); // Handle errors
+        console.error("Error fetching projects:", err);
       });
   };
 
   useEffect(() => {
     fetchAllProjects();
-  }, []); // Run only once when the component mounts
+  }, []);
 
   return (
-    <div className="w-11/12 mx-auto bg-slate-800 ">
+    <div className="w-11/12 mx-auto bg-slate-800 mt-20">
       <h1 className="text-5xl font-bold text-center py-10">My Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-10">
         {projects.map((project) => (
